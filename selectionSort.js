@@ -1,3 +1,4 @@
+// O(n^2)
 function findSmallest(arr) {
   if (arr.length === 1) {
     return arr[0]
