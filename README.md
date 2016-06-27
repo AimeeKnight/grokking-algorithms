@@ -6,12 +6,12 @@
 * O(lg n) (binary search) is faster than O(n) (simple search), but it gets a lot faster once the list of items you’re searching through grows.
 * Algorithm times are measured in terms of growth of an algorithm not speed.
 * Algorithm times are written in Big O notation.
-* The "traveling salesperson problem
+* The traveling salesperson problem
   * 120 permutations with 5 cities, so it will take 120 operations to solve the problem for 5 cities. For 6 cities, it will take 720 operations (720 permutations).
   * O(n!) time = factorial time.
   * Once you’re dealing with 100+ cities, it’s impossible to calculate the answer in time.
   * This is one of the unsolved problems in CS.
-  *There’s no fastknown algorithm for it, and smart people think it’s impossible to have a smart algorithm for this problem. The best we can do is come up with an approximate solution.
+  * There’s no fastknown algorithm for it, and smart people think it’s impossible to have a smart algorithm for this problem. The best we can do is come up with an approximate solution.
 
 # Chapter Two
 * Your computer’s memory is like a giant set of drawers (arrays and lists).
@@ -36,6 +36,6 @@
 * A stack has two operations: push and pop.
   * When you insert an item, it gets added to the top of the list. When you read an item, you just get to read the topmost item, and it gets taken off the list.
   * Used to save the variables for each recursive function.
-  * Topmost box in the stack tells you what call to factorial() we are currently on.
+  * Topmost box in the stack tells you what call to `factorial()` we are currently on.
   * All function calls go onto the call stack.
   * The call stack can get very large, which takes up a lot of memory.
