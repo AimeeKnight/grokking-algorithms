@@ -39,3 +39,15 @@ Chapter Three
 ..* Topmost box in the stack tells you what call to factorial() we are currently on.
 .. * All function calls go onto the call stack.
 ..* The call stack can get very large, which takes up a lot of memory.
+
+# Chapter Four
+* Divide and conquer algorithms are recursive algorithms
+* Euclid’s algorithm
+.. * Ex: If we find the biggest box that will work for this size, that will be the biggest box that will work for the entire farm.
+* If you are using divide and conquer on a list, the base case is probably an empty array, or an array with one element.
+* If you are implementing quicksort, choose a random element as the pivot.
+.. * “The performance of quicksort heavily depends on the pivot you choose.
+* The average runtime of quicksort is O(n log n)!
+* The constant in big-O notation can matter sometimes. That’s why quicksort is faster than mergesort.
+.. * We usually ignore that constant because if two algorithms have different big-O times, the constant doesn’t matter.
+* The constant will almost never matter for simple search vs binary search, because O(lg n) is so much faster than O(n) when your list gets big.
