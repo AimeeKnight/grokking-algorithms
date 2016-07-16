@@ -51,3 +51,14 @@
 * The constant in big-O notation can matter sometimes. That’s why quicksort is faster than mergesort.
 .. * We usually ignore that constant because if two algorithms have different big-O times, the constant doesn’t matter.
 * The constant will almost never matter for simple search vs binary search, because O(lg n) is so much faster than O(n) when your list gets big.
+
+# Chapter Five
+
+* You can make a hash table by combining a hash function with an array
+* Collisions are bad
+* You need a hash function that minimizes collisions
+* Hash tables have really fast search, insert and delete
+* Hash tables are good for modeling relationships from one item to another item
+* Once your load factor is greater than 1/2, it’s time to resize your hash table
+* Hash tables are used for caching data (e.g. with a web server)
+* Hash tables are great for catching duplicates
