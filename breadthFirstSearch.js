@@ -13,21 +13,19 @@ graph["thom"] = [];
 graph["jonny"] = [];
 
 
-function search(name) {
-  let searchQueue = [];
-  searchQueue = searchQueue.concat(graph[name]);
-  // This array is how you keep track of which people you've searched before.
+function breadthFirstSearch(name) {
+  let searchQueue = searchQueue.concat(graph[name]);
   const searched = [];
+
   while (searchQueue.length) {
     let person = searchQueue.shift();
-    // Only search this person if you haven't already searched them
+
     if (searched.indexOf(person) === -1) {
       if (isSeller(person)) {
         console.log(person + ' is a mango seller!');
         return true;
       } else {
         searchQueue = searchQueue.concat(graph[person]);
-        // Marks this person as searched
         searched.push(person);
       }
     }
@@ -35,4 +33,4 @@ function search(name) {
   return false;
 }
 
-console.log(search('you'));
+console.log(breadthFirstSearch('you'));
